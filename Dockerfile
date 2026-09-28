@@ -8,8 +8,8 @@ WORKDIR /app
 COPY package*.json ./
 COPY tsconfig.json ./
 
-# Limpiar cache y rebuild sqlite3 en el contenedor
-RUN npm ci && npm rebuild sqlite3
+# Instalar dependencias sin auditorías ni avisos de fund
+RUN npm ci --no-audit --no-fund
 
 COPY . .
 
