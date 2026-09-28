@@ -1,0 +1,8 @@
+node_modules
+npm-debug.log
+logs
+database/*.db
+database/*.sqlite
+database/*.sqlite3
+.git
+.env
